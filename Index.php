@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Listes des Revenues</title>
 </head>
 <body>
 <main class="container" style="text-align:center;">
         <div class="row">
             <section class="col-12 text-center">
                 <h1>Etat des retenues sur salaire</h1>
+                <a href="excel.php">
+                   <button type="button" class="btn btn-info">Exporter Salaires</button></a>
                 <?php
                     $k=1;
                     for($j=1; $j<100; $j++){
@@ -46,6 +48,7 @@
                 ?> 
             </section>
         </div>
+       
     </main>
 </body>
 </html>
