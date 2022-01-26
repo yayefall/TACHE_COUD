@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Listes des Revenues</title>
 </head>
+
 <body>
 <main class="container" style="text-align:center;">
         <div class="row">
             <section class="col-12 text-center">
-                <h1>Etat des retenues sur salaire</h1>
-                <a href="excel.php">
-                   <button type="button" class="btn btn-info">Exporter Salaires</button></a>
+             <h1>Etat des retenues sur salaire</h1> 
                 <?php
                     $k=1;
                     for($j=1; $j<100; $j++){
@@ -22,9 +22,10 @@
                         ?>
                         <table class="table" border="1">
                             <thead>
-                                <th>ID</th>
-                                <th>Rubrique1</th>
-                                <th>Rubrique2</th>
+                                <th>Matricule</th>
+                                <th>Prenom</th>
+                                <th>Nom</th>
+                                <th>Numero compte</th>
                                 <th>Montant</th>
                             </thead>
                             <tbody>
@@ -33,9 +34,10 @@
                                         ?>
                                         <tr>
                                             <td> <?php echo $i; ?></td>
-                                            <td>test2</td>
-                                            <td>test3</td>
-                                            <td>Test5</td>
+                                            <td>yaye fall</td>
+                                            <td>Dev</td>
+                                            <td>TES0468TD</td>
+                                            <td>1000000</td>
                                         </tr>
                                         <?php 
                                     }
@@ -48,7 +50,8 @@
                 ?> 
             </section>
         </div>
-       
+        <a href="excel.php"class="text-center;" >
+      <button type="button" class="btn btn-info" >Exporter Salaires</button></a>
     </main>
 </body>
 </html>

@@ -1,6 +1,16 @@
 <?php
-include ('connexion.php');
-        
+//Traitement pour afficher les données du tableau en fichier (Excel5)
+header('Content-Type: application/vnd.ms-excel');
+header('Content-Disposition: attachment;filename="Liste des revenues.xls"');
+include ('Index.php');
+
+   
+
+
+// Traitement pour afficher les donnees de la base de données en fichier excel
+
+/*include ('connexion.php');
+
 $select = $con->prepare('SELECT * FROM retenues');
 
 $select->setFetchMode(PDO::FETCH_ASSOC);
@@ -19,6 +29,6 @@ header("Content-type: application/vnd.ms-excel");
 header("Content-disposition: attachment; filename=Liste-des-revenues.xls");
 
 print $excel;
-exit;
+exit;*/
 
 ?>
